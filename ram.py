@@ -1,5 +1,5 @@
 def f(x):
-    return x*x
+    return x*x*x
     
 def RAM(a, b, n):
     h = (b - a) / n

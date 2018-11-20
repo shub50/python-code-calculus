@@ -13,9 +13,11 @@ y2= f.replace('x','(xv+.01)')
 
 
 
-
 for i in range (1,40):
+    xnew = xv
     y3= (eval(y1))
     q=((eval(y2)-eval(y1))/0.01)
     xv= (xv+(((-1)*y3)/q))
-print(xv)
+    if (abs((xnew - xv)) < 0.00001):
+        break
+print('One of the zeros is = ', xv)   
